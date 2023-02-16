@@ -20,7 +20,7 @@ for session_id in os.listdir(duplicate_path):
                 label_new = ''.join(label_list[:-1])
                 if label_new == name:
                     content = open(f'{label_path}\{label}', 'r').read()
-                    with open(dest_path + "/" + img_name[:-4]+".txt", "a") as f:
+                    with open(dest_path + "/" + img_name +".txt", "a") as f:
                         for txt in content:
                             f.write(f'{txt}')
                     f.close()
